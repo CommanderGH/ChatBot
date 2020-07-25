@@ -2,7 +2,7 @@
 
 ## Author
 ### 
-### 
-### _Edagr Miguel Rodríguez G._
+### _Daniel Gallego Restrepo_
+### _Edgar Miguel Rodríguez G._
 ### 
 ### 
