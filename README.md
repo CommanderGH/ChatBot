@@ -1,8 +1,11 @@
 # ChatBot
 
 ## Author
-### _Angie Stefany vera medina_
+
+### _Angie Stefany Vera Medina_
 ### 
-### _Edagr Miguel Rodríguez G._
+### _Daniel Gallego Restrepo_
+###
+### _Edgar Miguel Rodríguez G._
 ### 
 ### _Juana Camila Romano Fontecha._
