@@ -2,7 +2,7 @@
 
 ## Author
 ### 
-### _Daniel Gallego Restrepo_
-### _Edgar Miguel Rodríguez G._
 ### 
+### _Edagr Miguel Rodríguez G._
 ### 
+### _Juana Camila Romano Fontecha._
