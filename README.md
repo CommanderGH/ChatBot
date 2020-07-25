@@ -1,6 +1,6 @@
 # ChatBot
 
-## Author
+## Autores
 
 ### _Angie Stefany Vera Medina_
 ### 
