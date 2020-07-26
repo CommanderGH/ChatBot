@@ -1,7 +1,7 @@
 # ChatBot
 
 ## Author
-
+###_ELIAS PRETELT
 ### _Angie Stefany Vera Medina_
 ### 
 ### _Daniel Gallego Restrepo_
