@@ -70,6 +70,58 @@ const alternative = [
 
 const coronavirus = ["Please stay home"];
 
+// Versiones en español del diálogo
+
+const disparadores = [
+	["hola","hey","buenos días","buenas tardes","buen día"],
+	["cómo estás","cómo va la vida","qué tal van las cosas"],
+    ["qué estás haciendo","qué está ocurre ahora","qué más"],
+    ["qué edad tienes"],
+    ["quién eres","eres humano","eres robot","eres humano o robot"],
+    ["quién te creó","quién te hizo"],
+    ["tu nombre por favor","tu nombre","podría saber tu nombre","cuál es tu nombre","cómo te llaman"],
+    ["te amo"],
+    ["feliz","bien","divertido","increíble","fantastico","interesante"],
+    ["mal","aburrido","cansado"],
+    ["ayúdame","cuéntame historia","cuéntame chiste"],
+    ["ah","si","ok","entendido","bien"],
+    ["gracias","muchas gracias"],
+    ["adiós","hasta pronto","hasta luego"],
+    ["qué debería comer hoy"],
+    ["amigo"],
+    ["qué","por qué","cómo","dónde","cuándo"]
+    ];
+
+const respuesta = [
+    ["Hola","Hey!","¿¡Qué tal!?"],
+    ["Bien... ¿Tú cómo estás?","Muy bien... ¿Tú cómo estás?","Fantástico... ¿Tú cómo estás?"],
+    ["No mucho","Ya casi me iba a ir a dormir","¿Puedes adivinar?","De hecho, no sé"],
+    ["Soy infinito"],
+    ["Solo soy un robot","Soy un robot. ¿Qué eres tú?"],
+    ["El único y solo Dios, JavaScript"],
+    ["Soy el sin-nombre","No tengo un nombre"],
+    ["Yo también te amo","Yo también"],
+    ["¿Alguna vez te has sentido mal?","Me alegra oirlo"],
+    ["¿Por qué?","¿Por qué? ¡No deberías!","Trata de ver televisión"],
+    ["¿Sobre qué?","Érase una vez..."],
+    ["Cuéntame una historia","Cuéntame un chiste","Cuéntame sobre ti mismo"],
+    ["Con gusto"],
+    ["Adiós","Hasta luego","Chao"],
+    ["Sushi","Pizza"],
+    ["Amigo!"],
+    ["¿Si?"]
+];
+
+const alternativa = [
+    "Igual",
+    "Continúa...",
+    "Amigo...",
+    "Intenta nuevamente",
+    "Estoy escuchando..."
+];
+
+const covid = ["¡Quédate en casa!"]
+
 document.addEventListener("DOMContentLoaded", () => {
 	const inputField = document.getElementById("input")
 	inputField.addEventListener("keydown", function(e) {
