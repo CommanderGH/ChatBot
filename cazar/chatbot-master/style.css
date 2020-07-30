@@ -8,7 +8,7 @@ body {
 
 body::after {
 	content: "";
-	background-image: url("CHATBOT2.png");
+	background-image: url("CHATBOT3.png");
 	background-repeat: repeat-y; 
 	opacity: 0.5;
 	top: 0;
