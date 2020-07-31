@@ -935,25 +935,6 @@ padding-top: 28%;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 span { 
 	color: rgb(36, 17, 119); 
 } 
@@ -964,15 +945,34 @@ span {
 	position: inherit; 
 	top: 20%; 
 	right: 200px; 
-	width: 400px; 
-	border: 0px solid #421; 
-	padding: 40px; 
+	width: 800px; 
+	border: 0px solid cyan; 
+   padding: 40px;
+   background-image: url(fondo\ chat\ bot.png);
+   background-size: 800px;
+   align-items: flex-end;
+   overflow: hidden;
+   
 }
 #main div { 
-	margin: 10px; 
+   margin: 10px;
+   right: 200px; 
+	width: 400px;
+    
 } 
 #input { 
-	border: 0; 
 	padding: 5px; 
-	border: 1px solid #421; 
+   border: 2px solid red;
+   border-radius: 10px;
+   color: red;
+   background-color: azure;
+   stroke-opacity: unset;   
 }
+
+
+h8 {
+   color: cyan;
+   font-size: 25px;
+   
+}
+ 
