@@ -215,7 +215,7 @@ li> a{
    margin-top: 50px;
    margin-left: 60px;
 }
-h2{
+h3{
    text-align: left;
    width: 550px;
    color: rgb(255, 253, 239);
@@ -285,7 +285,7 @@ h4{
    text-align: center;
 }
 h5{
-   text-align: center;
+   text-align: left;
 }
 
 .titulo4{
@@ -998,15 +998,17 @@ padding-top: 28%;
 }
 
 .button4{
+   width: 100px;
+   height: 30px;
    border: none;
-   padding: 5px 13px;
-   text-align: left;
+   /* padding: 5px 13px; */
+   text-align: center;
    text-decoration: none;
    display: inline-block;
-   margin: 4px 2px;
+   /* margin: 4px 2px; */
    cursor: pointer;
    font-size: 22px;
-   margin-left: 1px;
+   /* margin-left: 1px; */
    
  }
 
@@ -1023,7 +1025,7 @@ padding-top: 28%;
  }
  
  .button4j 
- {background-color: #438b70;
+ {background-color: #a2af2d;
    color: white;
 
 } 
@@ -1035,13 +1037,14 @@ padding-top: 28%;
 }
 
 
-#blanco2 {
+/* #blanco2 {
    margin-left: auto;
    margin-right: auto;
    justify-content: center;
    width: 100%;
+   ;
 
-}
+} */
 
 .caval3{
    font-family:Arial, Helvetica, sans-serif;
