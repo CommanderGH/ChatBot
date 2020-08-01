@@ -7,7 +7,7 @@ body {
    -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
    box-sizing: border-box;
-   overflow: hidden;
+   justify-content: center;
 }
 
 body::after {
@@ -478,7 +478,7 @@ h5{
 
 
 .wrap{
-	width: 1100px;
+	width: 100%;
 	margin: 50px auto;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -1035,15 +1035,23 @@ padding-top: 28%;
 }
 
 
+#blanco2 {
+   margin-left: auto;
+   margin-right: auto;
+   justify-content: center;
+   width: 100%;
+
+}
+
 .datosp {
 	display: flex; 
 }
 .caval3{
    font-family:Arial, Helvetica, sans-serif;
-   width: 500px;
+   /* width: 500px;
    height: 450px;
    margin-left: 20px;
-   margin-right: 0; 
+   margin-right: 0;  */
    color: rgb(39, 39, 39);
    margin-block-start: inherit;
   
@@ -1056,7 +1064,7 @@ padding-top: 28%;
 .contienep{
    display: flex;
    background-color: rgb(58, 133, 104);
-   width: 776px;
+   /* width: 776px; */
    box-sizing: center;
    text-align: center;
    justify-content: center;
@@ -1071,8 +1079,8 @@ padding-top: 28%;
 }
 
 .ulticont {
-   width: 780px;
-   height: 500px;
+   /* width: 780px;
+   height: 500px; */
    background-size: inherit;
    background-color: white;
    text-align: center;
@@ -1081,8 +1089,8 @@ padding-top: 28%;
    
 }
 .ulticont p{
-   width: 200px;
-   height: 120px;
+   /* width: 200px;
+   height: 120px; */
    background-size: inherit;
    background-color: white;
    text-align: center;
@@ -1090,28 +1098,14 @@ padding-top: 28%;
    margin-left: 37%;
    
 }
-.mesag{
-   width: 780px;
-   height: 56px;
-   text-align: center;
-   justify-content: left;
-   font-size:12px;
-   background-color: white;
-   
-   
-}
 
-.button2{
-   border: none;
-   padding: -10px 22px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   margin: 4px 2px;
-   cursor: pointer;
-   font-size: 12px;
-   
- }
+.button3 {
+   background-color: #78f3c6;
+   color: white;
+   margin-left:60px;
+   box-shadow: 0 5px 12px 20px rgba(245, 222, 179, 0.137);
+
+} 
 
  .button3 a{
    border: none;
@@ -1125,14 +1119,6 @@ padding-top: 28%;
    
    
  }
- 
- .button3j 
- {background-color: #78f3c6;
-   color: white;
-   margin-left:60px;
-   box-shadow: 0 5px 12px 20px rgba(245, 222, 179, 0.137);
-
-} 
 
 
 
@@ -1156,18 +1142,25 @@ padding-top: 28%;
 
 
 span { 
-	color: rgb(36, 17, 119); 
+	color: rgb(122, 236, 28); 
 } 
 ::-webkit-input-placeholder { 
 	color: #711 
 }
 
+#title {
+   font-size: x-large;
+   margin: auto;
+   text-align: center;
+}
+
 .harrow{
    border: 3px rgb(129, 0, 0) solid;
    border-radius: 10px;
-   background-image: url(./imagenes/fondo\ chat\ bot.png);
+   background-color: rgb(46, 45, 45);
+   background-image: url(./imagenes/a0f6926f-ba8e-47e9-9641-33658f09b0e1.jpg);
    background-repeat: no-repeat;
-   background-size:auto;
+   background-size: 100%;
    opacity: inherit;
    color: teal;
    box-shadow: 0 15px 8px 2px rgba(255, 255, 255, 0.137);
@@ -1178,7 +1171,7 @@ span {
 	position: inherit; 
 	top: 20%; 
 	right: 200px; 
-	width: 800px; 
+	width: 100%; 
 	border: 0px solid cyan; 
    padding: 40px;
    align-items: flex-end;
