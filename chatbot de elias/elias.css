@@ -1100,7 +1100,7 @@ padding-top: 28%;
 
 
 span { 
-	color: rgb(122, 236, 28); 
+	color: white; 
 } 
 ::-webkit-input-placeholder { 
 	color: #711 
@@ -1115,8 +1115,8 @@ span {
 .harrow{
    border: 3px rgb(129, 0, 0) solid;
    border-radius: 10px;
-   background-color: rgba(53, 54, 58, 1);
-   background-image: url(./imagenes/a0f6926f-ba8e-47e9-9641-33658f09b0e1.jpg);
+   background-color: gray;
+   /* background-image: url(./imagenes/a0f6926f-ba8e-47e9-9641-33658f09b0e1.jpg); */
    background-repeat: no-repeat;
    background-size: 100%;
    opacity: inherit;
@@ -1134,14 +1134,20 @@ span {
    padding: 40px;
    align-items: flex-end;
    overflow: hidden;
-   
+   text-overflow: clip;
+   font-size: medium;
 }
 #main div { 
    margin: 10px;
    right: 200px; 
 	width: 400px;
-    
 } 
+
+pre {
+   white-space: break-spaces;
+   color: black;
+}
+
 #input { 
 	padding: 5px; 
    border: 2px solid rgb(1, 170, 15);

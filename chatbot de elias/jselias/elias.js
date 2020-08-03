@@ -38,7 +38,7 @@ const trigger = [
 /*9*/["duque la duquesa", "el tirano de la esquina", "la tumba de su abuela ii"],
 /*10*/["romance", "amor", "romanse", "pareja", "novios", "drama", "novia"],
 /*11*/["titanic colombiano", "lo que el viento se llevo", "el viento", "la rosa de guadalupe", "guadalupe"],
-/*12*/["ciencia ficción", "ficcion", "ciencia", "adrenalina", "misterio", "fantasia"],
+/*12*/["ciencia ficcion", "ficcion", "ciencia", "adrenalina", "misterio", "fantasia"],
 /*13*/["los descuentos de la pandemia la pelicula", "el supuesto mercado del gobierno"],
 /*14*/["accion", "pelos de punta", "reir", "comedia", "chistes", "chistosa", "graciosa", "graciosas"],
 /*15*/["francy recargado", "juana en parciales finales", "francy", "juana"],
@@ -49,6 +49,7 @@ const trigger = [
 /*20*/["4", "cuatro"],
 /*21*/["3", "tres"],
 /*22*/["2", "dos"],
+  ["1", "uno", "una"],
 /*23*/["cinco", "seis", "siete", "ocho", "nueve", "diez", "once", "doce", "trece", "catorce", "5", "6", "7", "8", "9", "10", "11", "12", "1314"],
 /*24*/["tarjeta blackcard mastercard visa dinnersclub bancolombia itau davivienda pichincha"],
 /*25*/["tarjeta credito ahorros cuenta corriente tarjeta debito"],
@@ -60,7 +61,7 @@ const trigger = [
 
 const reply = [
 /*1*/["Bienvenido a peliculas PandoraBot. Soy tu ChatBot inteligente. Tenemos disponibles los siguientes géneros: \n\n \
-■ Acción \n ■ Terror \n ■ Drama \n ■ Ciencia Ficción \n ■ Comedia \n ■ Infantil\n\n Por favor escribe el género que te gustaría ver"],
+■ Acción \n ■ Terror \n ■ Drama \n ■ Ciencia Ficción \n ■ Comedia \n ■ Infantil\n ■ Romance\n\n Por favor escribe el género que te gustaría ver"],
 /*2*/["Bien, gracias", "Muy bien", "Fantástico"],
 /*3*/["no mucho", "hablando contigo", "Soy un robot, no siento", "solo soy un chatbot"],
 /*4*/["quiero creer que soy joven"],
@@ -82,10 +83,11 @@ const reply = [
  de Reserva: 300 \n\n Cuando recibamos tu pago, te llegará una notificación a tu correo y se realizará la reserva automática. Tienes 6 horas \
  a partir de este momento para realizar el pago de la película. \n\n Por favor escríbenos tu correo electrónico para confirmar la reserva."],
 /*19*/["Hasta la próxima película. Adiós", "Hasta pronto", "Luego nos vemos", "Hasta luego"],
-/*20*/["Bueno, la reservo para cuatro. Serían $20.000 COP. Recibimos tarjeta y efectivo. ¿Con qué pagas?"],
-/*21*/["Bueno, la reservo para tres. Serían $15.000 COP. Recibimos tarjeta y efectivo. ¿Con qué pagas?"],
-/*22*/["Bueno, la reservo para dos. Serían $10.000 COP. Recibimos tarjeta y efectivo. ¿Con qué pagas?"],
-/*23*/["Bueno, eres el usuario número 300 por lo cual tenemos una súper oferta exclusivamente para ti en la compra de las boletas, lo cual será un total de $25.000 COP. Recibimos tarjeta y efectivo. ¿Con qué método vas a pagar?"],
+/*20*/["Bueno, la reservo para cuatro. Serían 20.000 pesos. Recibimos tarjeta y efectivo. ¿Con qué pagas?"],
+/*21*/["Bueno, la reservo para tres. Serían 15.000 pesos. Recibimos tarjeta y efectivo. ¿Con qué pagas?"],
+/*22*/["Bueno, la reservo para dos. Serían 10.000 pesos. Recibimos tarjeta y efectivo. ¿Con qué pagas?"],
+  ["Bueno, la reservo para uno. Serían 5.000 pesos. Recibimos tarjeta y efectivo. ¿Con qué pagas?"],
+/*23*/["Bueno, eres el usuario número 300 por lo cual tenemos una súper oferta exclusivamente para ti en la compra de las boletas, lo cual será un total de 25.000 pesos. Recibimos tarjeta y efectivo. ¿Con qué método vas a pagar?"],
 /*24*/["¿Tarjeta crédito o débito?"],
 /*25*/["Bueno, puedes hacer la transferencia o pago desde cualquier banco \
  utilizando la siguiente información \n\n ■ Número de cuenta: 500.986.876-1 \n ■ Enviar a nombre de: Pandora Películas S.A.S. \n ■ Número \
@@ -99,7 +101,7 @@ const reply = [
 
 // Este es un pequeño conjunto de 'capturar todo' básicamente al azar para cualquier cosa que el usuario ingrese fuera de las posibles frases desencadenantes
 
-const alternative = ["Lo siento, no te comprendí","Lo siento, mi inteligencia aún se está mejorando. No entendí lo que me acabas de escribir"];
+const alternative = ["Lo siento, no te comprendí", "Lo siento, mi inteligencia aún se está mejorando. No entendí lo que me acabas de escribir"];
 
 const coronavirus = ["¡Quédate en casa!"]
 
@@ -137,7 +139,7 @@ function output(input) {
     if (input.includes("@")) {
 
       text = "@";
-      
+
     }
 
     // Si no, entonces se procede a depurar el mensaje como una entrada estándar
@@ -246,7 +248,7 @@ function addChat(input, product) {
   // Estas función basicamente añade al DOM lo que dice el humano y lo que dice el ChatBot
   // Es decir, actualiza la página con el diálogo
 
-  const mainDiv = document.getElementById("main");
+  const mainDiv = document.getElementById("chat");
 
   // Esta parte añade lo que escribió el usuario
 
@@ -282,9 +284,9 @@ function speak(string) {
   synth.speak(u);
 
 }
-  
 
 
+
 //ARREGLOS DE JUANA NO TOCAR NI POR EL CHIRAS ÉSTE CÓDIGO
 //ARREGLOS DE JUANA NO TOCAR NI POR EL CHIRAS ÉSTE CÓDIGO
 //ARREGLOS DE JUANA NO TOCAR NI POR EL CHIRAS ÉSTE CÓDIGO
@@ -303,215 +305,215 @@ function speak(string) {
 //ARREGLOS DE JUANA NO TOCAR NI POR EL CHIRAS ÉSTE CÓDIGO
 //ARREGLOS DE JUANA NO TOCAR NI POR EL CHIRAS ÉSTE CÓDIGO
 
-  (function () {
-    'use strict';
-    window.addEventListener('load', function () {
-      var canvas = document.getElementById('canvas');
-  
-      if (!canvas || !canvas.getContext) {
-        return false;
-      }
-  
-      /********************
-        Random Number
-      ********************/
-  
-      function rand(min, max) {
-        return Math.floor(Math.random() * (max - min + 1) + min);
-      }
-  
-      /********************
-        Var
-      ********************/
-  
-      var ctx = canvas.getContext('2d');
-      var X = canvas.width = window.innerWidth;
-      var Y = canvas.height = window.innerHeight;
-      var mouseX = X / 2;
-      var mouseY = Y / 2;
-      var shapes = [];
-      var shapeNum = 360;
-      var shapeMax = 70;
-      var xRatio = 2;
-      var yRatio = 4;
-      var zRatio = 1.5;
-  
-      if (X < 768) {
-        shapeMax = 35;
-        xRatio = 3;
-        yRatio = 1;
-        zRatio = 2;
-      }
-  
-      /********************
-        Animation
-      ********************/
-  
-      window.requestAnimationFrame =
-        window.requestAnimationFrame ||
-        window.mozRequestAnimationFrame ||
-        window.webkitRequestAnimationFrame ||
-        window.msRequestAnimationFrame ||
-        function(cb) {
-          setTimeout(cb, 17);
-        };
-  
-      /********************
-        Shape
-      ********************/
-      
-      function Shape(ctx, x, y, i) {
-        this.ctx = ctx;
-        this.init(x, y, i);
-      }
-  
-      Shape.prototype.init = function(x, y, i) {
-        this.x = x;
-        this.y = y;
-        this.r = rand(5, shapeMax);
-        this.ir = this.r / 2;
-        this.i = i;
-        this.v = {
-          x: 0,
-          y: 0
-        };
-        this.a = i;
-        this.rad = this.a * Math.PI / 180;
-        this.rx = rand(Y / 15, Y / xRatio);
-        this.ry = rand(X / yRatio, X / zRatio);
-        this.ga = Math.random() * Math.random();
+(function () {
+  'use strict';
+  window.addEventListener('load', function () {
+    var canvas = document.getElementById('canvas');
+
+    if (!canvas || !canvas.getContext) {
+      return false;
+    }
+
+    /********************
+      Random Number
+    ********************/
+
+    function rand(min, max) {
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+
+    /********************
+      Var
+    ********************/
+
+    var ctx = canvas.getContext('2d');
+    var X = canvas.width = window.innerWidth;
+    var Y = canvas.height = window.innerHeight;
+    var mouseX = X / 2;
+    var mouseY = Y / 2;
+    var shapes = [];
+    var shapeNum = 360;
+    var shapeMax = 70;
+    var xRatio = 2;
+    var yRatio = 4;
+    var zRatio = 1.5;
+
+    if (X < 768) {
+      shapeMax = 35;
+      xRatio = 3;
+      yRatio = 1;
+      zRatio = 2;
+    }
+
+    /********************
+      Animation
+    ********************/
+
+    window.requestAnimationFrame =
+      window.requestAnimationFrame ||
+      window.mozRequestAnimationFrame ||
+      window.webkitRequestAnimationFrame ||
+      window.msRequestAnimationFrame ||
+      function (cb) {
+        setTimeout(cb, 17);
       };
-   
-      Shape.prototype.draw = function() {
-        var ctx  = this.ctx;
-        ctx.save();
-        ctx.fillStyle = 'white';
-        ctx.globalAlpha = this.ga;
-        ctx.translate(this.x, this.y);
-        ctx.rotate(-90 * Math.PI / 180);
-        ctx.translate(-this.x, -this.y);
-        ctx.beginPath();
-        ctx.arc(
-          Math.cos(this.rad) * this.rx + this.x,
-          Math.sin(this.rad) * this.ry + this.y,
-          Math.sin(this.rad / 2) < 0 ? -Math.sin(this.rad / 2) * this.r + this.ir : Math.sin(this.rad / 2) * this.r + this.ir,
-          0,
-          Math.PI * 2,
-          false
-        );
-        ctx.fill();
-        ctx.restore();
+
+    /********************
+      Shape
+    ********************/
+
+    function Shape(ctx, x, y, i) {
+      this.ctx = ctx;
+      this.init(x, y, i);
+    }
+
+    Shape.prototype.init = function (x, y, i) {
+      this.x = x;
+      this.y = y;
+      this.r = rand(5, shapeMax);
+      this.ir = this.r / 2;
+      this.i = i;
+      this.v = {
+        x: 0,
+        y: 0
       };
-  
-      Shape.prototype.updateParams = function() {
-        this.a += 0.4;
-        this.rad = this.a * Math.PI / 180;
-      };
-  
-      Shape.prototype.resize = function() {
-        this.x = X / 2;
-        this.y = Y / 2;
-      };
-  
-      Shape.prototype.render = function(i) {
-        this.updateParams();
-        this.draw();
-      };
-      
-      for (var i = 0; i < shapeNum; i++) {
-        var s = new Shape(ctx, X / 2, Y / 2, i);
-        shapes.push(s);
+      this.a = i;
+      this.rad = this.a * Math.PI / 180;
+      this.rx = rand(Y / 15, Y / xRatio);
+      this.ry = rand(X / yRatio, X / zRatio);
+      this.ga = Math.random() * Math.random();
+    };
+
+    Shape.prototype.draw = function () {
+      var ctx = this.ctx;
+      ctx.save();
+      ctx.fillStyle = 'white';
+      ctx.globalAlpha = this.ga;
+      ctx.translate(this.x, this.y);
+      ctx.rotate(-90 * Math.PI / 180);
+      ctx.translate(-this.x, -this.y);
+      ctx.beginPath();
+      ctx.arc(
+        Math.cos(this.rad) * this.rx + this.x,
+        Math.sin(this.rad) * this.ry + this.y,
+        Math.sin(this.rad / 2) < 0 ? -Math.sin(this.rad / 2) * this.r + this.ir : Math.sin(this.rad / 2) * this.r + this.ir,
+        0,
+        Math.PI * 2,
+        false
+      );
+      ctx.fill();
+      ctx.restore();
+    };
+
+    Shape.prototype.updateParams = function () {
+      this.a += 0.4;
+      this.rad = this.a * Math.PI / 180;
+    };
+
+    Shape.prototype.resize = function () {
+      this.x = X / 2;
+      this.y = Y / 2;
+    };
+
+    Shape.prototype.render = function (i) {
+      this.updateParams();
+      this.draw();
+    };
+
+    for (var i = 0; i < shapeNum; i++) {
+      var s = new Shape(ctx, X / 2, Y / 2, i);
+      shapes.push(s);
+    }
+
+    /********************
+      Render
+    ********************/
+
+    function render() {
+      ctx.clearRect(0, 0, X, Y);
+      for (var i = 0; i < shapes.length; i++) {
+        shapes[i].render(i);
       }
-  
-      /********************
-        Render
-      ********************/
-      
-      function render() {
-        ctx.clearRect(0, 0, X, Y);
-        for (var i = 0; i < shapes.length; i++) {
-          shapes[i].render(i);
-        }
-        requestAnimationFrame(render);
+      requestAnimationFrame(render);
+    }
+
+    render();
+
+    /********************
+      Change Color
+    ********************/
+
+    var colors = ['#FE7F7E', '#FED57F', '#B5E2B4', '#ACE8FE', '#BAB3EB'];
+
+    function changeColor() {
+      var time = rand(1000, 5000);
+      canvas.style.background = colors[rand(0, colors.length - 1)];
+      setTimeout(changeColor, time);
+    }
+
+    changeColor();
+
+    /********************
+      Event
+    ********************/
+
+    function onResize() {
+      X = canvas.width = window.innerWidth;
+      Y = canvas.height = window.innerHeight;
+      for (var i = 0; i < shapes.length; i++) {
+        shapes[i].resize();
       }
-  
-      render();
-  
-      /********************
-        Change Color
-      ********************/
-      
-      var colors = ['#FE7F7E', '#FED57F', '#B5E2B4', '#ACE8FE', '#BAB3EB'];
-      
-      function changeColor() {
-        var time = rand(1000, 5000);
-        canvas.style.background = colors[rand(0, colors.length - 1)];
-        setTimeout(changeColor, time);
-      }
-  
-      changeColor();
-  
-      /********************
-        Event
-      ********************/
-      
-      function onResize() {
-        X = canvas.width = window.innerWidth;
-        Y = canvas.height = window.innerHeight;
-        for (var i = 0; i < shapes.length; i++) {
-          shapes[i].resize();
-        }
-      }
-  
-      window.addEventListener('resize', function(){
-        onResize();
-      });
-  
-      canvas.addEventListener('wheel', function(e) {
-        for (var i = 0; i < shapes.length; i++) {
-          shapes[i].rx -= e.deltaY / 10;
-          shapes[i].a += e.deltaX / 100;
-        }
-      }, false);
-  
-      var touchStartY;
-      var touchMoveY;
-      var touchEndY;
-      var touchStartX;
-      var touchMoveX;
-      var touchEndX;
-  
-      canvas.addEventListener('touchstart', function(e) {
-        var touch = e.targetTouches[0];
-        touchStartY = touch.pageY;
-        touchStartX = touch.pageX;
-      }, false);
-  
-      canvas.addEventListener('touchmove', function(e) {
-        var touch = e.targetTouches[0];
-        touchMoveY = touch.pageY;
-        touchMoveX = touch.pageX;
-        touchEndY = touchStartY - touchMoveY;
-        touchEndX = touchStartX - touchMoveX;
-        for (var i = 0; i < shapes.length; i++) {
-          shapes[i].rx -= touchEndY / 100;
-          shapes[i].a += touchEndX / 100;
-        }
-      }, false);
-  
-      canvas.addEventListener('touchend', function(e) {
-        touchStartY = null;
-        touchMoveY = null;
-        touchEndY = null;
-        touchStartX = null;
-        touchMoveX = null;
-        touchEndX = null;
-      }, false);
-  
+    }
+
+    window.addEventListener('resize', function () {
+      onResize();
     });
-    // Author
-    console.log('File Name / eyesight.js\nCreated Date / Jun 18, 2020\nAuthor / Toshiya Marukubo\nTwitter / https://twitter.com/toshiyamarukubo');
-  })();
+
+    canvas.addEventListener('wheel', function (e) {
+      for (var i = 0; i < shapes.length; i++) {
+        shapes[i].rx -= e.deltaY / 10;
+        shapes[i].a += e.deltaX / 100;
+      }
+    }, false);
+
+    var touchStartY;
+    var touchMoveY;
+    var touchEndY;
+    var touchStartX;
+    var touchMoveX;
+    var touchEndX;
+
+    canvas.addEventListener('touchstart', function (e) {
+      var touch = e.targetTouches[0];
+      touchStartY = touch.pageY;
+      touchStartX = touch.pageX;
+    }, false);
+
+    canvas.addEventListener('touchmove', function (e) {
+      var touch = e.targetTouches[0];
+      touchMoveY = touch.pageY;
+      touchMoveX = touch.pageX;
+      touchEndY = touchStartY - touchMoveY;
+      touchEndX = touchStartX - touchMoveX;
+      for (var i = 0; i < shapes.length; i++) {
+        shapes[i].rx -= touchEndY / 100;
+        shapes[i].a += touchEndX / 100;
+      }
+    }, false);
+
+    canvas.addEventListener('touchend', function (e) {
+      touchStartY = null;
+      touchMoveY = null;
+      touchEndY = null;
+      touchStartX = null;
+      touchMoveX = null;
+      touchEndX = null;
+    }, false);
+
+  });
+  // Author
+  console.log('File Name / eyesight.js\nCreated Date / Jun 18, 2020\nAuthor / Toshiya Marukubo\nTwitter / https://twitter.com/toshiyamarukubo');
+})();
 
 //jARREGLOS DE JUANA NO TOCAR NI POR EL CHIRAS ÉSTE CÓDIGO
 //jARREGLOS DE JUANA NO TOCAR NI POR EL CHIRAS ÉSTE CÓDIGO
