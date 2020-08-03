@@ -1115,7 +1115,7 @@ span {
 .harrow{
    border: 3px rgb(129, 0, 0) solid;
    border-radius: 10px;
-   background-color: rgb(46, 45, 45);
+   background-color: rgba(53, 54, 58, 1);
    background-image: url(./imagenes/a0f6926f-ba8e-47e9-9641-33658f09b0e1.jpg);
    background-repeat: no-repeat;
    background-size: 100%;
